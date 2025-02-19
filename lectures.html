@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaduPlanner - Courses</title>
+    <link rel="stylesheet" href="assets/css/lectures.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    
+    
+        <!-- ✅ Header -->
+        <header>
+            <h1>📚 YaduPlanner - Courses</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">🏠 Home</a></li>
+                    <li><a href="planner.html">📅 Planner</a></li>
+                    <li><a href="syllabus.html">📂 Syllabus</a></li>
+                    <li><a href="score.html">📊 Score</a></li>
+                    <li><a href="lectures.html">📺 Lectures</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <!-- ✅ Courses Section -->
+        <section class="courses">
+            <div class="course-card" onclick="openCourse('physics')" style="--color:#FFA726;">
+                <div class="course-banner">
+                    <img src="assets/images/physics.png" alt="Physics">
+                </div>
+                <div class="course-info">
+                    <h3>Physics JEE Main Full Course</h3>
+                </div>
+            </div>
+    
+            <div class="course-card" onclick="openCourse('math')" style="--color:#26A69A;">
+                <div class="course-banner">
+                    <img src="assets/images/math.png" alt="Math">
+                </div>
+                <div class="course-info">
+                    <h3>Math JEE Main Full Course</h3>
+                </div>
+            </div>
+    
+            <div class="course-card" onclick="openCourse('ioc')" style="--color:#EF5350;">
+                <div class="course-banner">
+                    <img src="assets/images/ioc.png" alt="IOC">
+                </div>
+                <div class="course-info">
+                    <h3>Inorganic Chemistry Full Course</h3>
+                </div>
+            </div>
+    
+            <div class="course-card" onclick="openCourse('oc')" style="--color:#AB47BC;">
+                <div class="course-banner">
+                    <img src="assets/images/oc.png" alt="OC">
+                </div>
+                <div class="course-info">
+                    <h3>Organic Chemistry Full Course</h3>
+                </div>
+            </div>
+    
+            <div class="course-card" onclick="openCourse('pc')" style="--color:#42A5F5;">
+                <div class="course-banner">
+                    <img src="assets/images/pc.png" alt="PC">
+                </div>
+                <div class="course-info">
+                    <h3>Physical Chemistry Full Course</h3>
+                </div>
+            </div> <br>
+        </section>
+    
+    
+    
+
+    <!-- ✅ Bottom Navbar (Mobile Only) -->
+    <nav class="bottom-nav">
+        <a href="index.html">🏠</a>
+        <a href="planner.html">📅</a>
+        <a href="syllabus.html">📂</a>
+        <a href="score.html">📊</a>
+        <a href="lectures.html">📺</a>
+    </nav>
+
+    <script>
+        function openCourse(courseName) {
+            window.location.href = `course.html?course=${courseName}`;
+        }
+    </script>
+
+</body>
+</html>
+

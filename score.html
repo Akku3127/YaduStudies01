@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaduTracker</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- ✅ Header (PC) -->
+    <header>
+        <h1>📊 YaduTracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="planner.html">📅 Planner</a></li>
+                <li><a href="syllabus.html">📂 Notes</a></li>
+                <li><a href="score.html">📊 Score</a></li>
+                <li><a href="lectures.html">📺 Lectures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Score Tracker Section -->
+    <section class="score-tracker">
+        <h2>📊 Enter Your Test Score</h2>
+
+        <label for="testDate">Select Date:</label>
+        <input type="date" id="testDate">
+
+        <label for="physicsScore">Physics (100):</label>
+        <input type="number" id="physicsScore" placeholder="Enter Physics Marks" min="0" max="100">
+
+        <label for="chemistryScore">Chemistry (100):</label>
+        <input type="number" id="chemistryScore" placeholder="Enter Chemistry Marks" min="0" max="100">
+
+        <label for="mathScore">Math (100):</label>
+        <input type="number" id="mathScore" placeholder="Enter Math Marks" min="0" max="100">
+
+        <button onclick="saveScore()">Submit Score</button>
+    </section>
+
+    <!-- ✅ Score Table -->
+    <section class="score-table">
+        <h2>📅 Test Score History</h2>
+        <table id="scoreTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Physics</th>
+                    <th>Chemistry</th>
+                    <th>Math</th>
+                    <th>Total (300)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Scores will be added here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ✅ Bottom Navbar (Mobile) -->
+    <nav class="bottom-nav">
+        <a href="index.html">🏠</a>
+        <a href="planner.html">📅</a>
+        <a href="syllabus.html">📂</a>
+        <a href="score.html">📊</a>
+        <a href="lectures.html">📺</a>
+    </nav>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

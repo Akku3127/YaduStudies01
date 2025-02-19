@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaduEducation - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- ✅ Header (PC) -->
+    <header>
+        <h1>📅 YaduEdu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="planner.html">📅 Planner</a></li>
+                <li><a href="syllabus.html">📂 Notes</a></li>
+                <li><a href="score.html">📊 Score</a></li>
+                <li><a href="lectures.html">📺 Lectures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Exam Countdown Section -->
+    <section class="exam-alerts">
+        <h2>📢 Upcoming Exams</h2> <br>
+        <div class="exam-container">
+            <div class="exam-card" id="exam1">
+                <h3>📖 JEE Mains 2nd</h3> <br>
+                <p>Remaining: <span class="countdown" data-date="2025-04-05"></span></p>
+            </div>
+            <div class="exam-card" id="exam2">
+                <h3>📚 NEET</h3><br>
+                <p>Remaining: <span class="countdown" data-date="2025-05-04"></span></p>
+            </div>
+            <div class="exam-card" id="exam3">
+                <h3>📝 JEE Adv 25</h3><br>
+                <p>Remaining: <span class="countdown" data-date="2025-05-18"></span></p>
+            </div>
+            <div class="exam-card" id="exam4">
+                <h3>📜 UPSC</h3><br>
+                <p>Remaining: <span class="countdown" data-date="2025-06-01"></span></p>
+            </div>
+            <div class="exam-card" id="exam5">
+                <h3>📑 CUET (UG)</h3><br>
+                <p>Remaining: <span class="countdown" data-date="2025-05-13"></span></p>
+            </div>
+            <div class="exam-card" id="exam6">
+                <h3>💻 SSC CGL</h3><br>
+                <p>Remaining: <span class="countdown" data-date="2025-07-20"></span></p>
+            </div>
+        </div>
+    </section>
+
+  
+<!-- ✅ Test Course Section (Best of Luck ke Upar) -->
+<section class="test-courses">
+    <h2>📑 Test Courses</h2>
+
+    <div class="test-course-card" onclick="openTestCourse('jee-mains')" style="--color:#FFA726;">
+        <div class="test-course-banner">
+            <img src="assets/images/jee.png" alt="JEE Mains">
+        </div>
+        <div class="test-course-info">
+            <h3>JEE Mains Full Test Series</h3>
+        </div>
+    </div>
+
+    <div class="test-course-card" onclick="openTestCourse('swt')" style="--color:#26A69A;">
+        <div class="test-course-banner">
+            <img src="assets/images/swt.png" alt="swt">
+        </div>
+        <div class="test-course-info">
+            <h3>Subjest wise Test </h3>
+        </div>
+    </div>
+
+    <div class="test-course-card" onclick="openTestCourse('lbl')" style="--color:#EF5350;">
+        <div class="test-course-banner">
+            <img src="assets/images/ncerttest.png" alt="banner">
+        </div>
+        <div class="test-course-info">
+            <h3>NCERT line by line tests</h3>
+        </div>
+    </div>
+</section> <br>
+  <!-- ✅ Best of Luck Section  -->
+  <section class="best-luck-section">
+    <h1 class="best-luck-text">🎉 Best of Luck! </h1>
+</section>
+
+ <!-- ✅ Bottom Navbar (Mobile Only) -->
+ <nav class="bottom-nav">
+    <a href="index.html">🏠</a>
+    <a href="planner.html">📅</a>
+    <a href="syllabus.html">📂</a>
+    <a href="score.html">📊</a>
+    <a href="lectures.html">📺</a>
+</nav>
+
+
+
+   
+
+    
+
+    <script>
+        function openTestCourse(courseName) {
+            window.location.href = `test-course.html?course=${courseName}`;
+        }
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

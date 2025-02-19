@@ -1,0 +1,14 @@
+{
+    "Physics": [
+      { "id": 1, "question": "What is Newton's second law?", "options": ["F=ma", "E=mc²", "V=IR", "P=IV"], "answer": "F=ma" },
+      { "id": 2, "question": "What is the unit of force?", "options": ["N", "kg", "m/s²", "C"], "answer": "N" }
+    ],
+    "Chemistry": [
+      { "id": 1, "question": "What is the lightest element?", "options": ["Oxygen", "Hydrogen", "Helium", "Carbon"], "answer": "Hydrogen" }
+    ],
+    "Maths": [
+      { "id": 1, "question": "What is 2+3?", "answer": "5" },
+      { "id": 2, "question": "What is 10/2?", "answer": "5" }
+    ]
+  }
+  

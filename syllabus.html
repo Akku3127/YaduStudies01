@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaduPlanner - Syllabus</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- ✅ Header -->
+    <header>
+        <h1>📂 YaduPlanner - Syllabus</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="planner.html">📅 Planner</a></li>
+                <li><a href="syllabus.html">📂 Syllabus</a></li>
+                <li><a href="score.html">📊 Score</a></li>
+                <li><a href="lectures.html">📺 Lectures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Syllabus Section -->
+    <section class="syllabus-container">
+        <h2>📚 Select a Subject</h2>
+
+        <div class="folder">
+            📐 Math
+            <select id="math-pdf">
+                <option value="math_1.pdf">Chapter 1 - Algebra</option>
+                <option value="math_2.pdf">Chapter 2 - Calculus</option>
+                <option value="math_3.pdf">Chapter 3 - Trigonometry</option>
+            </select>
+            <button onclick="openPdf('math')">📄 View PDF</button>
+        </div>
+
+        <div class="folder">
+            🔬 Physics
+            <select id="physics-pdf">
+                <option value="physics_1.pdf">Chapter 1 - Mechanics</option>
+                <option value="physics_2.pdf">Chapter 2 - Optics</option>
+                <option value="physics_3.pdf">Chapter 3 - Electromagnetism</option>
+            </select>
+            <button onclick="openPdf('physics')">📄 View PDF</button>
+        </div>
+
+        <div class="folder">
+            🧪 Inorganic Chemistry (IOC)
+            <select id="ioc-pdf">
+                <option value="ioc_1.pdf">Periodic Table</option>
+                <option value="ioc_2.pdf">Chemical Bonding</option>
+            </select>
+            <button onclick="openPdf('ioc')">📄 View PDF</button>
+        </div>
+
+        <div class="folder">
+            🧪 Organic Chemistry (OC)
+            <select id="oc-pdf">
+                <option value="oc_1.pdf">Hydrocarbons</option>
+                <option value="oc_2.pdf">Alcohols & Phenols</option>
+            </select>
+            <button onclick="openPdf('oc')">📄 View PDF</button>
+        </div>
+
+        <div class="folder">
+            ⚗️ Physical Chemistry
+            <select id="physical-pdf">
+                <option value="physical_1.pdf">Thermodynamics</option>
+                <option value="physical_2.pdf">Chemical Kinetics</option>
+            </select>
+            <button onclick="openPdf('physical')">📄 View PDF</button>
+        </div>
+    </section>
+
+    <!-- ✅ Bottom Navbar (Mobile) -->
+    <nav class="bottom-nav">
+        <a href="index.html">🏠</a>
+        <a href="planner.html">📅</a>
+        <a href="syllabus.html">📂</a>
+        <a href="score.html">📊</a>
+        <a href="lectures.html">📺</a>
+    </nav>
+
+    <script src="assets/js/syllabus.js"></script>
+</body>
+</html>

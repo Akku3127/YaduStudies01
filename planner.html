@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaduPlanner - Planner</title>
+    <link rel="stylesheet" href="assets/css/plan.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <!-- ✅ Header -->
+    <header>
+        <h1>📅 YaduPlanner</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="planner.html">📅 Planner</a></li>
+                <li><a href="syllabus.html">📂 Notes</a></li>
+                <li><a href="score.html">📊 Score</a></li>
+                <li><a href="lectures.html">📺 Lectures</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Planner Section -->
+    <section class="planner">
+        <h2 id="currentDate">4 Feb</h2>
+
+        <table id="schedule-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody id="schedule"></tbody>
+        </table>
+
+        <button id="editScheduleBtn" onclick="editSchedule()">✏️ Edit Schedule</button>
+        <button id="saveScheduleBtn" onclick="saveSchedule()" style="display: none;">💾 Save Schedule</button>
+        <button id="completeDayBtn" onclick="completeDay()">✅ Mark as Completed</button>
+        <button id="incompleteDayBtn" onclick="incompleteDay()" style="display: none;">❌ Mark as Incomplete</button>
+    </section>
+
+    <!-- ✅ Navigation Buttons -->
+    <div class="nav-buttons">
+        <button onclick="prevDay()">⬅️ Prev</button>
+        <button onclick="nextDay()">Next ➡️</button>
+        <button id="resetStorageBtn" onclick="resetLocalStorage()">🗑 Reset Data</button>
+
+    </div>
+<br> <br> <br>
+    <!-- ✅ Bottom Navbar (Mobile) -->
+    <nav class="bottom-nav">
+        <a href="index.html">🏠</a>
+        <a href="planner.html">📅</a>
+        <a href="syllabus.html">📂</a>
+        <a href="score.html">📊</a>
+        <a href="lectures.html">📺</a>
+    </nav>
+
+    <script src="assets/js/plan.js"></script>
+</body>
+</html>
